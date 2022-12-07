@@ -12,22 +12,22 @@ public class Main {
         StatsService service = new StatsService();
 
         int sum = service.totalSales(sales);
-        System.out.print(System.lineSeparator()+"Сумма продаж за период: " + sum);
+        System.out.print(System.lineSeparator() + "Сумма продаж за период: " + sum);
 
         int averSale = service.averageSale(sales);
-        System.out.print(System.lineSeparator()+"Средняя продажа в месяц: " + averSale);
+        System.out.print(System.lineSeparator() + "Средняя продажа в месяц: " + averSale);
 
         int minMonth = service.minSales(sales);
-        System.out.print(System.lineSeparator()+ "Минимальные продажи были в " + minMonth + "-м месяце.");
+        System.out.print(System.lineSeparator() + "Минимальные продажи были в " + minMonth + "-м месяце.");
 
         int maxMonth = service.maxSales(sales);
-        System.out.print(System.lineSeparator()+ "Максимальные продажи были в " + maxMonth + "-м месяце.");
+        System.out.print(System.lineSeparator() + "Максимальные продажи были в " + maxMonth + "-м месяце.");
 
         int bASMonths = service.belowAverageSales(sales);
-        System.out.print(System.lineSeparator()+"Количество месяцев с продажами ниже среднего уровня: " + bASMonths);
+        System.out.print(System.lineSeparator() + "Количество месяцев с продажами ниже среднего уровня: " + bASMonths);
 
         int aASMonths = service.aboveAverageSales(sales);
-        System.out.print(System.lineSeparator()+"Количество месяцев с продажами выше среднего уровня: " + aASMonths);
+        System.out.print(System.lineSeparator() + "Количество месяцев с продажами выше среднего уровня: " + aASMonths);
 
     }
 }
